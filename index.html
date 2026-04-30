@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LABORATORIO 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+
+    <header class="topbar">
+      <img src="./assets/images/ucr-logo.png" class="topbar__logo" alt="Universidad de Costa Rica" />
+      <span class="topbar__title">Laboratorio 6 — Manuel Esteban Guzman Gomez</span>
+    </header>
+
+    <main class="main">
+      <div class="app">
+        <header class="app__header">
+          <div>
+            <h1 class="app__title">Mis tareas</h1>
+            <p class="app__subtitle">Gestiona tus actividades</p>
+          </div>
+          <div class="app__badge">
+            <span class="app__badge-num" id="counter">0</span>
+            <span class="app__badge-label">pendientes</span>
+          </div>
+        </header>
+
+        <div class="app__input-area">
+          <input
+            type="text"
+            id="task-input"
+            class="app__input"
+            placeholder="Nueva tarea..."
+          />
+          <button id="add-btn" class="app__btn">Agregar</button>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+      </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
